@@ -1,0 +1,24 @@
+{
+  "name": "nyc-ytlc-api",
+  "description": "This is a robust Express backend API for fetching and analyzing 2014 New York City Yellow Taxi Trip Data. The API provides flexible filtering capabilities for taxi trip records.",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**' --ext 'ts,json' --exec 'npm run build && npm run start'",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "vercel-build": "npm run build"
+  },
+  "author": "Ranggamyd",
+  "dependencies": {
+    "axios": "^1.7.8",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5"
+  }
+}
